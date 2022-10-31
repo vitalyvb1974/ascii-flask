@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Create ASCII Art</title>
+  </head>
+  <body>
+    {% extends "parent.html" %}
+    {% block content %}
+    
+    <h2> Enter the URL of an image </h2>
+    <form action="{{ url_for('ascii') }}" method="POST">
+      <input type="text" id="urlBox" name="url" value="Image URL" onfocus="this.value=''"><br>
+      <input type="submit" id="urlButton" value="Create">
+    </form>
+    <details>
+      <summary><strong>How do I get an image URL?</strong></summary>
+      <p id="findImg">Right-click on an image. You should see a window pop up. The action you select depends on your browser. It should say something like "Copy image address" or "Copy image link". Select the action that appears in your browser and paste into the box below.</p>
+    </details>
+      
+    {% endblock %}
+  </body>
+</html>

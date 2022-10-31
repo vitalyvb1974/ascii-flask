@@ -1,0 +1,76 @@
+#ascii-art {
+  font-family: monospace;
+}
+
+body {
+  background-color: #34495e;
+  color: #ecf0f1;
+  font-family: sans-serif;
+}
+
+.title {
+  text-align: center;
+  font-size: 60px;
+}
+
+.container {
+  font-size: 16px;
+  text-align: center;
+  width: 90%;
+  margin: auto;
+}
+
+.urlMsg {
+  color: #e74c3c;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+input {
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+#urlButton {
+  background-color: #3498db;
+  color: #ecf0f1;
+}
+
+#urlButton:hover {
+  background-color: #2980b9;
+}
+
+#urlBox {
+  color: #34495e;
+}
+
+details {
+  width: 40%;
+  text-align: center;
+  margin: auto;
+  margin-top: 5px;
+}
+
+#findImg {
+  border-left: 2px solid #3498db;
+  padding-left: 5px;
+  text-align: left;
+}
+
+a {
+  color: #3498db;
+  font-size: 16px;
+}
+
+a:visited {
+  color: #f39c12;
+}

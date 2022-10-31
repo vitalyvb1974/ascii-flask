@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Create ASCII Art</title>
+  </head>
+  <body>
+    {% extends "parent.html" %}
+    {% block content %}
+
+    {% if ascii['valid'] %}
+      <h2> Converted Image </h2>
+      <div id='ascii-art'>
+        {% for line in ascii['img'] %}
+          {{line}}<br>
+        {% endfor %}
+      </div>
+    {% else %}
+        <h2 class="urlMsg"> Invalid URL </h2>
+        <h3 class="urlMsg">{{ ascii['img'] }}</h3>
+    {% endif %}
+    <a href="{{ url_for('home') }}">Home</a>
+      
+    {% endblock %}
+  </body>
+</html>
